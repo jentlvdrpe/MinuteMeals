@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinuteMeals.Ui.Mvc", "MinuteMeals.Ui.Mvc\MinuteMeals.Ui.Mvc.csproj", "{A7C85A64-F75E-44BE-9CC2-7CF62308FA2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7C85A64-F75E-44BE-9CC2-7CF62308FA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C85A64-F75E-44BE-9CC2-7CF62308FA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C85A64-F75E-44BE-9CC2-7CF62308FA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C85A64-F75E-44BE-9CC2-7CF62308FA2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FDF2E33-8097-4341-B7C8-80FAF9B349CA}
+	EndGlobalSection
+EndGlobal
