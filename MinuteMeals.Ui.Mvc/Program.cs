@@ -6,8 +6,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+//var connectionString = builder.Configuration.GetConnectionString(nameof(RecipeManagerDbContext));
+
 builder.Services.AddDbContext<RecipeManagerDbContext>(options =>
 {
+    //options.UseSqlServer(connectionString);
     options.UseInMemoryDatabase(nameof(RecipeManagerDbContext));
 });
 

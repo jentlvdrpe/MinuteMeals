@@ -2,21 +2,23 @@ using Microsoft.AspNetCore.Mvc;
 using MinuteMeals.Ui.Mvc.Models;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using MinuteMeals.Ui.Mvc.Core;
 
 namespace MinuteMeals.Ui.Mvc.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly RecipeManagerDbContext _recipeManagerDbContext;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(RecipeManagerDbContext database)
         {
-            _logger = logger;
+            _recipeManagerDbContext = database;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var recipes = _recipeManagerDbContext.Recipe.ToList();
+            return View(recipes);
         }
 
         public IActionResult Privacy()
